@@ -1,16 +1,18 @@
-# SUPERSTACK TEMPLATE
+# SUPER STACK WEB TEMPLATE
 
 ## ToDo
 - [x] Deno
 - [ ] Bun
 - [ ] Elysia
-- [ ] RsBuild
-- [ ] SolidJS
+- [x] RsBuild
+- [x] SolidJS
 - [ ] TailwindCSS
 
 
 ## Dependencies
 - Deno
+- RsBuild
+- SolidJS
 
-### STEP 1:
-Initialized the App with `deno init superstack`
+### Run the development server:
+`deno task dev`
