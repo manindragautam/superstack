@@ -7,6 +7,7 @@
     "npm:@rsbuild/core@^1.2.2": "1.2.2_@swc+helpers@0.5.15",
     "npm:@rsbuild/plugin-babel@^1.0.3": "1.0.3_@rsbuild+core@1.2.2__@swc+helpers@0.5.15_@babel+core@7.26.0",
     "npm:@rsbuild/plugin-solid@^1.0.4": "1.0.4_@rsbuild+core@1.2.2__@swc+helpers@0.5.15_solid-js@1.9.4__seroval@1.2.0",
+    "npm:@solidjs/router@~0.15.3": "0.15.3_solid-js@1.9.4__seroval@1.2.0",
     "npm:@types/node@*": "22.5.4",
     "npm:create-rsbuild@latest": "1.1.2",
     "npm:solid-js@^1.9.4": "1.9.4_seroval@1.2.0"
@@ -411,6 +412,12 @@
     "@rspack/lite-tapable@1.0.1": {
       "integrity": "sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w=="
     },
+    "@solidjs/router@0.15.3_solid-js@1.9.4__seroval@1.2.0": {
+      "integrity": "sha512-iEbW8UKok2Oio7o6Y4VTzLj+KFCmQPGEpm1fS3xixwFBdclFVBvaQVeibl1jys4cujfAK5Kn6+uG2uBm3lxOMw==",
+      "dependencies": [
+        "solid-js"
+      ]
+    },
     "@swc/helpers@0.5.15": {
       "integrity": "sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==",
       "dependencies": [
@@ -623,6 +630,7 @@
       "npm:@rsbuild/core@^1.2.2",
       "npm:@rsbuild/plugin-babel@^1.0.3",
       "npm:@rsbuild/plugin-solid@^1.0.4",
+      "npm:@solidjs/router@~0.15.3",
       "npm:solid-js@^1.9.4"
     ]
   }
