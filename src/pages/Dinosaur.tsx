@@ -21,10 +21,14 @@ export default function Dinosaur() {
   });
 
   return (
-    <div class="content">
-      <h1>{dinosaur().name}</h1>
-      <p>{dinosaur().description}</p>
-      <A href="/">Back to all dinosaurs</A>
+    <div class="flex justify-center">
+      <main class="mt-10">
+        <h1 class="text-4xl font-bold">{dinosaur().name}</h1>
+        <p class="mt-4">{dinosaur().description}</p>
+        <A class="underline text-blue-600 hover:text-blue-900" href="/">
+          Back to all dinosaurs
+        </A>
+      </main>
     </div>
   );
 }

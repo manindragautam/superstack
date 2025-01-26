@@ -1,6 +1,6 @@
-import { defineConfig } from '@rsbuild/core';
-import { pluginBabel } from '@rsbuild/plugin-babel';
-import { pluginSolid } from '@rsbuild/plugin-solid';
+import { defineConfig } from "@rsbuild/core";
+import { pluginBabel } from "@rsbuild/plugin-babel";
+import { pluginSolid } from "@rsbuild/plugin-solid";
 
 export default defineConfig({
   plugins: [
@@ -9,4 +9,9 @@ export default defineConfig({
     }),
     pluginSolid(),
   ],
+  tools: {
+    postcss: (_opt, { addPlugins }) => {
+      addPlugins(require("@tailwindcss/postcss"));
+    },
+  },
 });

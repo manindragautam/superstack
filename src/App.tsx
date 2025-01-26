@@ -1,7 +1,6 @@
 import { Route, Router } from "@solidjs/router";
 import Index from "./pages/Index.tsx";
 import Dinosaur from "./pages/Dinosaur.tsx";
-import "./App.css";
 
 const App = () => {
   return (

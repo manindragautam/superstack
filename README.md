@@ -6,13 +6,14 @@
 - [ ] Elysia
 - [x] RsBuild
 - [x] SolidJS
-- [ ] TailwindCSS
+- [x] TailwindCSS
 
 
 ## Dependencies
 - Deno
 - RsBuild
 - SolidJS
+- TailwindCSS
 
 ### Run the development server:
 `deno task dev`
