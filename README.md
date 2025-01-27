@@ -2,8 +2,8 @@
 
 ## ToDo
 - [x] Deno
-- [ ] Bun
-- [ ] Elysia
+- [x] Bun
+- [x] ElysiaJS
 - [x] RsBuild
 - [x] SolidJS
 - [x] TailwindCSS
@@ -11,6 +11,8 @@
 
 ## Dependencies
 - Deno
+- Bun
+- ElysiaJS
 - RsBuild
 - SolidJS
 - TailwindCSS

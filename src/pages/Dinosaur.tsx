@@ -1,6 +1,5 @@
 import { A, useParams } from "@solidjs/router";
 import type { Dino } from "../types.ts";
-import data from "../data.json";
 import { createSignal } from "solid-js";
 import { onMount } from "solid-js";
 
@@ -11,13 +10,10 @@ export default function Dinosaur() {
     description: "",
   });
 
-  onMount(async () => {
-    const resp = await data.find((x) =>
-      x.name.toLowerCase() == params.selectedDinosaur
+  onMount(() => {
+    fetch(`/api/${params.selectedDinosaur}`).then((resp) => resp.json()).then(
+      (data) => setDinosaur(data),
     );
-    const dino = resp as Dino;
-    setDinosaur(dino);
-    console.log("Dinosaur", dino);
   });
 
   return (
