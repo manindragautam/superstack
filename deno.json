@@ -4,9 +4,14 @@
     "dev:api": "bun run --watch api/index.ts",
     "dev:ui": "rsbuild dev",
     "build": "rsbuild build",
-    "preview": "rsbuild preview"
+    "serve": {
+      "command": "deno task dev:api",
+      "dependencies": ["build"],
+      "description": "Build the frontend with production mode, run the api server"
+    }
   },
   "imports": {
+    "@elysiajs/static": "npm:@elysiajs/static@^1.2.0",
     "@rsbuild/core": "npm:@rsbuild/core@^1.2.2",
     "@rsbuild/plugin-babel": "npm:@rsbuild/plugin-babel@^1.0.3",
     "@rsbuild/plugin-solid": "npm:@rsbuild/plugin-solid@^1.0.4",

@@ -3,6 +3,7 @@
   "specifiers": {
     "jsr:@std/assert@1": "1.0.11",
     "jsr:@std/internal@^1.0.5": "1.0.5",
+    "npm:@elysiajs/static@^1.2.0": "1.2.0_elysia@1.2.10__@sinclair+typebox@0.34.14",
     "npm:@rsbuild/core@1.2.2": "1.2.2_@swc+helpers@0.5.15",
     "npm:@rsbuild/core@^1.2.2": "1.2.2_@swc+helpers@0.5.15",
     "npm:@rsbuild/plugin-babel@^1.0.3": "1.0.3_@rsbuild+core@1.2.2__@swc+helpers@0.5.15_@babel+core@7.26.0",
@@ -279,6 +280,13 @@
       "dependencies": [
         "@babel/helper-string-parser",
         "@babel/helper-validator-identifier"
+      ]
+    },
+    "@elysiajs/static@1.2.0_elysia@1.2.10__@sinclair+typebox@0.34.14": {
+      "integrity": "sha512-oLpAi8c+maPpA0XhhK3BELaIjIG+nXg/K9p8cFfW4q5ayRD59a3MOMOOGgpiXZkHJzLPWcouhhyyLAYtaANW4g==",
+      "dependencies": [
+        "elysia",
+        "node-cache"
       ]
     },
     "@jridgewell/gen-mapping@0.3.8": {
@@ -583,6 +591,9 @@
     "caniuse-lite@1.0.30001695": {
       "integrity": "sha512-vHyLade6wTgI2u1ec3WQBxv+2BrTERV28UXQu9LO6lZ9pYeMk34vjXFLOxo1A4UBA8XTL4njRQZdno/yYaSmWw=="
     },
+    "clone@2.1.2": {
+      "integrity": "sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w=="
+    },
     "convert-source-map@2.0.0": {
       "integrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg=="
     },
@@ -728,6 +739,12 @@
     "nanoid@3.3.8": {
       "integrity": "sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w=="
     },
+    "node-cache@5.1.2": {
+      "integrity": "sha512-t1QzWwnk4sjLWaQAS8CHgOJ+RAfmHpxFWmc36IWTiWHQfs0w5JDMBS1b1ZxQteo0vVVuWJvIUKHDkkeK7vIGCg==",
+      "dependencies": [
+        "clone"
+      ]
+    },
     "node-releases@2.0.19": {
       "integrity": "sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw=="
     },
@@ -816,6 +833,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
+      "npm:@elysiajs/static@^1.2.0",
       "npm:@rsbuild/core@^1.2.2",
       "npm:@rsbuild/plugin-babel@^1.0.3",
       "npm:@rsbuild/plugin-solid@^1.0.4",

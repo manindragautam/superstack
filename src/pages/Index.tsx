@@ -20,14 +20,14 @@ export default function Index() {
     <div class="flex justify-center">
       <main class="mt-10">
         <h1 class="text-4xl font-bold">
-          Welcome to the Dinosaur app
+          Welcome to Super Stack Template
         </h1>
         <p class="mt-4">Click on a dinosaur below to learn more.</p>
         <ul class="list-inside list-disc">
           <For each={dinosaurs()}>
             {(dinosaur) => (
               <li class="underline text-blue-600 hover:text-blue-900">
-                <A href={`/${dinosaur.name.toLowerCase()}`} class="dinosaur">
+                <A href={`/dinosaur/${dinosaur.name.toLowerCase()}`} class="dinosaur">
                   {dinosaur.name}
                 </A>
               </li>

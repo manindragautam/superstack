@@ -6,7 +6,7 @@ const App = () => {
   return (
     <Router>
       <Route path="/" component={Index} />
-      <Route path="/:selectedDinosaur" component={Dinosaur} />
+      <Route path="/dinosaur/:selectedDinosaur" component={Dinosaur} />
     </Router>
   );
 };

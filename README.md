@@ -19,3 +19,6 @@
 
 ### Run the development server:
 `deno task dev`
+
+### Run the production build locally:
+`deno task serve`

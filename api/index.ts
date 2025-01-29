@@ -1,8 +1,11 @@
-import { Elysia } from "elysia";
+import { Elysia, file } from "elysia";
+import { staticPlugin } from "@elysiajs/static";
 import data from "./data.json" with { type: "json" };
 
 const app = new Elysia()
-  .get("/", () => "Hello Elysia")
+  .use(staticPlugin({ assets: "dist/static", prefix: "/static" }))
+  .get("/", () => file("dist/index.html"))
+  .get("/dinosaur/:name", () => file("dist/index.html"))
   .get("/api", () => data)
   .get(
     "/api/:dinosaur",

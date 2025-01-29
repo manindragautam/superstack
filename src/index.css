@@ -2,6 +2,6 @@
 
 @layer base {
   body {
-    @apply text-lg;
+    @apply text-lg text-blue-900;
   }
 }
